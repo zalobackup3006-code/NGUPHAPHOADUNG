@@ -16786,6 +16786,19 @@ function getStudent(){
   if(!se) return { ten:'', lop:'', user:'' };
   return { ten: se.ten || '', lop: khoiHopLe(se.khoi) ? se.khoi : '', user: se.user };
 }
+/* gop diem da luu tren may chu (moi may deu thay bai da lam, sao da dat); giu diem cao hon */
+function mergeServerScores(kq){
+  if(!kq || !kq.length) return false;
+  var changed = false;
+  kq.forEach(function(x){
+    var unitId = x[0], actId = x[1];
+    if(!UNITS[unitId]) return;
+    var pct = Math.max(0, Math.min(1, (Number(x[2]) || 0) / 100));
+    var cur = getScore(unitId, actId);
+    if(!cur || (cur.pct || 0) < pct){ setScore(unitId, actId, pct); changed = true; }
+  });
+  return changed;
+}
 function isAdmin(){ var se = getSession(); return !!(se && se.admin); }
 /* thong tin bai da giao cho khoi cua hoc sinh: {id, ngay, mo, moi} hoac null */
 function giaoInfo(unitId){
@@ -16941,6 +16954,7 @@ function autoLoginFromLink(app){
   jsonp({ hd:'dangnhap', user:q.u, pass:q.p }).then(function(d){
     if(d && d.ok){
       setSession({ user:d.user, token:d.token, ten:d.ten, khoi:d.khoi, admin:!!d.admin, bai:d.bai || [], giao:d.giao || [] });
+      mergeServerScores(d.kq);
       sessionChecked = true;
       render();
     } else { renderLogin(app, (d && d.loi) || 'Chưa đăng nhập được.'); }
@@ -16971,6 +16985,7 @@ function checkSession(se){
     if(d && d.ok){
       var changed = JSON.stringify(se.bai) !== JSON.stringify(d.bai || []) || se.ten !== d.ten || se.khoi !== d.khoi || !!se.admin !== !!d.admin || JSON.stringify(se.giao || []) !== JSON.stringify(d.giao || []);
       setSession({ user:se.user, token:se.token, ten:d.ten, khoi:d.khoi, admin:!!d.admin, bai:d.bai || [], giao:d.giao || [] });
+      if(mergeServerScores(d.kq)) changed = true;
       if(changed) render();
     } else if(d && d.mat){
       clearSession();
@@ -17006,6 +17021,7 @@ function renderLogin(app, msg){
     jsonp({ hd:'dangnhap', user:user, pass:pass }).then(function(d){
       if(d && d.ok){
         setSession({ user:d.user, token:d.token, ten:d.ten, khoi:d.khoi, admin:!!d.admin, bai:d.bai || [], giao:d.giao || [] });
+      mergeServerScores(d.kq);
         sessionChecked = true;
         if(location.hash) go('');
         render();
