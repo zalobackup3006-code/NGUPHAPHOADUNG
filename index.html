@@ -83,6 +83,8 @@ header.top .sub{font-size:13px;opacity:.85;margin-top:2px;}
 .unitcard .uc-main{flex:1;min-width:0;}
 .unitcard .uc-book{font-size:11px;color:var(--brand-dark);font-weight:700;text-transform:uppercase;letter-spacing:.3px;}
 .unitcard .uc-title{font-size:15.5px;font-weight:700;margin-top:2px;}
+.unitcard .uc-prog{font-size:12.5px;font-weight:700;color:var(--ink);margin-top:4px;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.unitcard .uc-prog .st-on svg{width:14px;height:14px;}
 .unitcard .uc-tags{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
 .unitcard .uc-tag{font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--line,#e5e7eb);color:var(--sub,#555);}
 .unitcard .uc-tag.open{background:#dcfce7;color:#166534;}
@@ -123,6 +125,7 @@ header.top .sub{font-size:13px;opacity:.85;margin-top:2px;}
 .actcard .ac-title{font-size:14.5px;font-weight:600;flex:1;}
 .stars{display:flex;gap:2px;}
 .stars svg{width:15px;height:15px;}
+.ac-pct{font-size:12.5px;font-weight:700;color:var(--sub);white-space:nowrap;margin-left:auto;padding-left:8px;}
 .st-on{color:var(--amber);} .st-off{color:#dfe2ec;}
 
 .actrun{padding-top:6px;}
@@ -17113,6 +17116,11 @@ function renderHome(app){
       h += '<div class="uc-book">'+esc(u.bookShort)+' &middot; '+esc(unitLabel(u))+'</div>';
       h += '<div class="uc-title">'+esc(u.title)+'</div>';
       h += '<div class="uc-meta">'+u.acts.length+' bài luyện tập</div>';
+      if(ACCOUNTS && !isAdmin()){
+        var lam = 0, sao = 0, xong = 0;
+        u.acts.forEach(function(a){ var sc = getScore(u.id, a.id); if(sc){ lam++; sao += sc.stars || 0; if(sc.done) xong++; } });
+        h += '<div class="uc-prog">'+(lam ? 'Đã làm '+lam+'/'+u.acts.length+' bài · <span class="st-on">'+icon('star')+'</span> '+sao+'/'+(u.acts.length*3)+' sao'+(xong===u.acts.length ? ' · Hoàn thành' : '') : 'Chưa làm bài nào')+'</div>';
+      }
       if(gi){
         h += '<div class="uc-tags">'
           + (gi.mo ? '<span class="uc-tag open">Đang mở</span>' : '<span class="uc-tag lock">Đang khoá</span>')
@@ -17195,6 +17203,7 @@ function renderUnit(app, r){
       html += '<div class="actcard" data-act="'+act.id+'">';
       html += '<div class="acticon">'+icon('check')+'</div>';
       html += '<div class="ac-title">'+esc(act.title)+'</div>';
+      if(sc) html += '<div class="ac-pct" title="Điểm cao nhất">'+Math.round((sc.pct||0)*100)+'%</div>';
       html += '<div class="stars">';
       for(var i=1;i<=3;i++){ html += '<span class="'+(i<=stars?'st-on':'st-off')+'">'+icon('star')+'</span>'; }
       html += '</div></div>';
