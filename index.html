@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- PHIEN BAN 31/10/2026 - CO BAI GLOBAL 5 HK1 (g5h1) -->
 <html lang="vi">
 <head>
 <meta charset="utf-8">
@@ -131,6 +132,9 @@ header.top .sub{font-size:13px;opacity:.85;margin-top:2px;}
 .actrun{padding-top:6px;}
 .actinstr{background:var(--chip-bg);border-radius:12px;padding:11px 13px;font-size:13.5px;color:var(--chip-ink);margin-bottom:14px;}
 .actinstr b{color:var(--brand-dark);}
+.actpassage{background:var(--chip-bg);border-left:4px solid var(--brand-dark);border-radius:12px;padding:11px 13px;font-size:14px;line-height:1.7;color:var(--chip-ink);margin-bottom:14px;}
+.actpassage b{color:var(--brand-dark);}
+.wrap[class*="lv"] .actpassage{font-size:var(--i);font-weight:500;line-height:1.7;}
 .qrow{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:13px 14px;margin-bottom:10px;}
 .qrow .qn{font-size:12px;color:var(--sub);font-weight:700;margin-bottom:5px;}
 .qtext{font-size:15px;line-height:1.7;}
@@ -16739,6 +16743,758 @@ window.UNITS['m1-l1'] = {
 };
 })();
 
+</script><script>
+(function(){
+window.GROUPS = window.GROUPS || {};
+window.GROUPS['gs5-hk1'] = {
+  title: 'Bài tập bổ trợ Global Success lớp 5 - Học kỳ 1',
+  sub: 'Theo từng Unit trong sách Extra Workbook 5, học lần lượt từ Unit 1. Mỗi Unit có khung ngữ pháp và bài luyện tập.'
+};
+window.UNITS = window.UNITS || {};
+var C = function(s,o,a){ return {s:s, o:o, a:a}; };
+var T = function(s,a){ return {s:s, a:a}; };
+var G = function(s,a){ return {s:s, a:a}; };
+window.UNITS['g5h1-u1'] = {
+  id:'g5h1-u1', book:'Extra Workbook 5 (Global Success) - Học kỳ 1', bookShort:'Extra Workbook 5', lesson:1, unitLabel:'Unit 1',
+  group:'gs5-hk1', groupOrder:1,
+  title:'All about me - Giới thiệu về bản thân', topicKey:'unit 1 all about me gioi thieu ban than so thich lop 5',
+  can:'Em giới thiệu được tên, lớp, nơi sống của mình và hỏi đáp về sở thích.',
+  grammar:[
+    { h:'1. Hỏi và trả lời để giới thiệu về bản thân', icon:'book',
+      body:[
+        'F::Can you tell me about yourself?<span class="ex">Bạn có thể giới thiệu về bản thân mình không?</span>',
+        'F::I\'m in ...<span class="ex">Tôi học lớp ...</span>',
+        'F::I live in ...<span class="ex">Tôi sống ở ...</span>',
+        '<p>Ví dụ: Can you tell me about yourself? - <span class="hl">I\'m in</span> class 5A. (Tôi học lớp 5A.)</p>',
+        '<p>Ví dụ: Can you tell me about yourself? - I <span class="hl">live in</span> the city. (Tôi sống ở thành phố.)</p>'
+      ],
+      tip:'Sau "in" dùng tên lớp (class 5A) hoặc nơi sống (the city, the countryside).' },
+    { h:'2. Hỏi và nói về sở thích của ai đó', icon:'scale',
+      body:[
+        'F::What\'s your favourite ...?<span class="ex">Môn/màu/món ... yêu thích của bạn là gì?</span>',
+        'F::It\'s ...<span class="ex">Là ...</span>',
+        '<p>Ví dụ: What\'s your favourite sport? - <span class="hl">It\'s</span> table tennis. (Là môn bóng bàn.)</p>'
+      ],
+      tip:'Sau "favourite" dùng danh từ: sport, colour, food, animal, subject. Ví dụ: What\'s your favourite <span class="hl">colour</span>?' }
+  ],
+  acts:[
+    { id:'g5h1-u1-a1', title:'Exercise 4. Circle the correct answers.', type:'choice', star:2,
+      instr:'Khoanh vào đáp án đúng. (Ví dụ: Where do you live? - Chọn "live" vì sau "do" dùng động từ nguyên mẫu.)',
+      huong:'Sau trợ động từ do/does, dùng động từ nguyên mẫu. Ở câu "He/She/It" thì thêm s/es.',
+      items:[ C('My grandparents live (in/ by) the countryside.',['in','by'],0),
+              C('Can you tell me about (your/yourself/you)?',['your','yourself','you'],1),
+              C('My uncle (lives/ live/ lived) in the city.',['lives','live','lived'],0),
+              C('Where do you (live/ lives)?',['live','lives'],0),
+              C('My friend (am/ is/ are) at Grade 5.',['am','is','are'],1) ] },
+    { id:'g5h1-u1-a2', title:'Exercise 5. Choose the correct answers.', type:'choice', star:2,
+      instr:'Chọn câu trả lời đúng cho mỗi câu hỏi. (Ví dụ: Câu hỏi về nơi sống thì trả lời bằng "I live in...".)',
+      huong:'Đọc câu hỏi trước, chọn câu trả lời đúng nghĩa với câu hỏi (hỏi gì trả lời nấy).',
+      items:[ C('Where do you live?',['I live in the village.','I am in grade 3.'],0),
+              C('Can you tell me about yourself?',['I am in class 5C.','I\'m fine.'],0),
+              C('What\'s your hobby?',['I live at 5 Hai Ba Trung street.','It\'s dancing.'],1),
+              C('Were you in Ha Long Bay last summer?',['Yes, I was.','Yes, I were.'],0),
+              C('Where was you last summer?',['I were in Sapa.','I was in Da Nang.'],1),
+              C('Do you want to play a game?',['Yes, I don\'t.','Yes, I do.'],1),
+              C('When\'s your birthday?',['My birthday is in January.','I\'m in the city.'],0) ] },
+    { id:'g5h1-u1-a3', passage:"My name's Nam. I am eleven years olds. I am in class 5A. I live in the countryside with my parents. My father is a farmer. He works on a farm. My mother is a teacher. She works at a school. I love my family.", title:'Exercise 6. Read and tick True or False.', type:'choice', star:2,
+      instr:'Đọc đoạn văn rồi chọn True (đúng) hoặc False (sai). (Ví dụ: Đoạn văn viết tên Nam, nên "His name is Phong." là False.)',
+      huong:'Tìm đúng thông tin trong đoạn văn về Nam, đối chiếu từng câu. Chú ý tên và người sống cùng.',
+      items:[ C('His name is Phong.',['True','False'],1),
+              C('He is in class 5A.',['True','False'],0),
+              C('He lives with his grandparents in the countryside.',['True','False'],1),
+              C('His father is a farmer.',['True','False'],0),
+              C('His mother works on a farm.',['True','False'],1) ] },
+    { id:'g5h1-u1-a4', title:'Exercise 7. Read and complete.', type:'gap', star:2,
+      instr:'Đọc đoạn văn, điền từ trong khung: city, from, lives, big. (Ví dụ: "He is ___ Da Nang" = "from".)',
+      huong:'Đọc cả đoạn trước. Mỗi chỗ trống chọn một từ khác nhau trong khung, không dùng lại từ.',
+      items:[ { s:'Phong is a new pupil in class 4A. He is (1) ___ Da Nang. Now, he (2) ___ with his grandparents in Ho Chi Minh city. The (3) ___ city is big. The (4) ___ is big and busy.', a:[['from'],['lives'],['big'],['city']], multi:true, ph:['(1)','(2)','(3)','(4)'] } ] },
+    { id:'g5h1-u1-a5', title:'Exercise 8. Reorder the words to make the correct sentences.', type:'type', star:3,
+      instr:'Sắp xếp các từ thành câu đúng, viết hoa chữ đầu và thêm dấu chấm/hỏi. (Ví dụ: ...)',
+      huong:'Tìm chủ ngữ trước, rồi động từ, rồi phần còn lại. Câu hỏi bắt đầu bằng từ để hỏi hoặc trợ động từ.',
+      items:[ T('I / 5C. / in / am / class', ['I am in class 5C.']),
+              T('tell / Can / me / you / yourself? / about', ['Can you tell me about yourself?']),
+              T('lives / She / in / countryside. / the', ['She lives in the countryside.']),
+              T('birthday / His / June. / in / is', ['His birthday is in June.']),
+              T('do / you / Where / live?', ['Where do you live?']),
+              T('What / the / was / weather / like / Ha Noi / in / yesterday?', ['What was the weather like in Ha Noi yesterday?']) ] },
+    { id:'g5h1-u1-a6', title:'Exercise 3. Circle the odd one out.', type:'choice', star:1,
+      instr:'Khoanh vào từ khác loại với ba từ còn lại. (Ví dụ: city, village, mountains là nơi chốn, blue là màu, nên khoanh D.)',
+      huong:'Xác định nhóm của ba từ còn lại (nơi chốn, tính từ, động từ, đại từ, động vật, đồ uống...), rồi chọn từ không cùng nhóm.',
+      items:[ C('city / village / mountains / blue',['city','village','mountains','blue'],3),
+              C('big / city / small / large',['big','city','small','large'],1),
+              C('football / live / play / run',['football','live','play','run'],1),
+              C('he / she / they / her',['he','she','they','her'],3),
+              C('dolphin / milk / elephant / tiger',['dolphin','milk','elephant','tiger'],1) ] },
+    { id:'g5h1-u1-a7', title:'Exercise 5. Number the sentences in the correct order to make a dialogue.', type:'gap', star:2,
+      instr:'Đánh số thứ tự các câu để thành đoạn hội thoại (điền số 1 đến 6 vào chỗ trống).',
+      huong:'Câu mở đầu thường là "Can you tell me about yourself?". Câu hỏi "Where do you live?" đứng sau câu giới thiệu.',
+      items:[ G('a. It\'s pink. ___',['4']), G('b. Can you tell me about yourself? ___',['1']), G('c. What\'s your favourite colour? ___',['3']),
+              G('d. I live in the city. ___',['6']), G('e. I\'m Dan. I\'m in Grade 5. My hobby is drawing. ___',['2']), G('f. Pink? Oh, I like pink too. Where do you live? ___',['5']) ] },
+    { id:'g5h1-u1-a8', title:'Exercise 6. Circle the mistake and correct.', type:'type', star:3,
+      instr:'Tìm lỗi sai trong mỗi câu và viết lại câu đúng vào dòng bên dưới.',
+      huong:'Soát động từ theo chủ ngữ (is/are/has/have), sau "does/don\'t" không thêm s, và "your" đứng trước favourite.',
+      items:[ T('What is you favourite subject?', ['What is your favourite subject?']),
+              T('My favourite sport are badminton.', ['My favourite sport is badminton.']),
+              T('I love pink. I has a pink T-shirt.', ['I love pink. I have a pink T-shirt.']),
+              T('Why does you like dolphin?', ['Why do you like dolphins?']),
+              T('I don\'t likes pandas.', ['I don\'t like pandas.']) ] },
+    { id:'g5h1-u1-a9', title:'Exercise 1. Unscramble the words.', type:'type', star:1,
+      instr:'Sắp xếp lại các chữ cái thành từ đúng. (Ví dụ: tyci = city.)',
+      huong:'Đọc to từ bị xáo trộn, tìm từ quen thuộc về nơi chốn và động vật.',
+      items:[ T('tyci', ['city']), T('counsidetry', ['countryside']), T('wichsand', ['sandwich']), T('dlinpho', ['dolphin']) ] },
+    { id:'g5h1-u1-a10', title:'Exercise 3. Circle the correct answers.', type:'choice', star:2,
+      instr:'Khoanh vào từ đúng để hoàn thành câu. (Ví dụ: "___ you tell me about yourself?" dùng "Can".)',
+      huong:'Đọc cả câu, xem thiếu loại từ gì (động từ to be, trợ động từ, từ để hỏi, danh từ...) rồi chọn.',
+      items:[ C('___ you tell me about yourself? - I live in the countryside.',['where','Can','how','when\'s'],1),
+              C('___ do you live?',['What','were','was','Where'],3),
+              C('Where ___ you live? - I live in the mountains.',['has','is','do','were'],2),
+              C('What ___ are you in? - I\'m in class 4A.',['food','class','drink','country'],1),
+              C('___ lives in a city.',['He','They','We','I'],0),
+              C('___ is a small dolphin.',['is','it','they','this'],1),
+              C('What is ___ favourite sport? - It\'s baseball.',['your','wasn\'t','are','were'],0),
+              C('What\'s your favourite ___? - It\'s sandwich.',['colour','animal','sport','food'],3),
+              C('The city is ___.',['in','street','friend','beautiful'],3),
+              C('Her favourite ___ is pink.',['colour','food','drink','animal'],0),
+              C('I like chicken pho. What ___ your favourite food?',['are','at','is','in'],2) ] },
+    { id:'g5h1-u1-a11', passage:"Hello, everyone. Let me introduce myself. My full name is Nguyen Chi Dung. You can call me Dung. I'm in grade 5B. I live in the countryside. My favourite subject is English. My favourite food is chicken. I'm a big fan of tennis. It's really fun. I often play tennis on Saturday with my brother.", title:'Exercise 4. Read and circle.', type:'choice', star:2,
+      instr:'Đọc đoạn giới thiệu của Dung rồi khoanh vào đáp án đúng. (Ví dụ: Dung học lớp 5B hay 5A?)',
+      huong:'Tìm thông tin trong đoạn văn để chọn. Đọc đoạn một lần rồi trả lời từng câu.',
+      items:[ C('He is in grade 5B/5A.',['5B','5A'],0),
+              C('He lives in the city/countryside.',['city','countryside'],1),
+              C('His favourite subject is Maths/English.',['Maths','English'],1),
+              C('His favourite food is chicken/sandwich.',['chicken','sandwich'],0),
+              C('Tennis/ table tennis is his favourite sport.',['Tennis','Table tennis'],0) ] },
+    { id:'g5h1-u1-a12', title:'Exercise 5. Read and complete.', type:'gap', star:2,
+      instr:'Đọc đoạn văn của Dan rồi điền từ trong khung: green, city, football, food. (Ví dụ: "Ho Chi Minh ___" = city.)',
+      huong:'Đọc từng chỗ trống, chọn từ phù hợp nghĩa: thành phố, màu, món ăn, môn thể thao.',
+      items:[ { s:'Hi, all. Let me tell you a little bit about myself. My name\'s Dan. I\'m in Grade 5. I live in Ho Chi Minh ___. My hobby is drawing. I like ___. My favourite ___ is pizza. My mother often makes a pizza for me in the morning. My favourite sports is ___. My father and I often play it in the yard.', a:[['city'],['green'],['food'],['football']], multi:true, ph:['(1)','(2)','(3)','(4)'] } ] },
+    { id:'g5h1-u1-a13', passage:"Hi, all. Let me tell you a little bit about myself. My name's Dan. I'm in Grade 5. I live in Ho Chi Minh city. My hobby is drawing. I like green. My favourite food is pizza. My mother often makes a pizza for me in the morning. My favourite sports is football. My father and I often play it in the yard.", title:'Exercise 6. Read exercise 5 again and answer the questions.', type:'type', star:2,
+      instr:'Đọc lại đoạn văn của Dan rồi trả lời các câu hỏi bằng câu đầy đủ. (Ví dụ: What class is Dan in? - He is in Grade 5.)',
+      huong:'Mỗi câu trả lời lấy thông tin từ đoạn văn ở bài 5. Trả lời bằng câu "He is..." hoặc "His favourite ... is ...".',
+      items:[ T('What class is Dan in?', ['He is in Grade 5.','He\'s in Grade 5.']),
+              T('What\'s his favourite colour?', ['His favourite colour is green.','It\'s green.']),
+              T('What\'s his favourite food?', ['His favourite food is pizza.','It\'s pizza.']),
+              T('What\'s his favourite sport?', ['His favourite sport is football.','It\'s football.']) ] },
+    { id:'g5h1-u1-a14', title:'Exercise 8. Reorder the words to make the correct sentences.', type:'type', star:2,
+      instr:'Sắp xếp các từ thành câu đúng. (Ví dụ: "I love playing badminton." là câu hoàn chỉnh.)',
+      huong:'Tìm chủ ngữ và động từ trước, sau đó xếp các từ còn lại. Chú ý "love + V-ing".',
+      items:[ T('sports. / tennis / Table / my / is / favourite', ['Table tennis is my favourite sport.']),
+              T('What / favourite / colour ? / is / your', ['What is your favourite colour?']),
+              T('My / is / in / brother / class 4B.', ['My brother is in class 4B.']),
+              T('playing / love / I / badminton.', ['I love playing badminton.']),
+              T('Maths / my / is / subject. / favourite', ['Maths is my favourite subject.']) ] }
+  ]
+};
+})();
+
+(function(){
+window.GROUPS = window.GROUPS || {};
+window.GROUPS['gs5-hk1'] = window.GROUPS['gs5-hk1'] || {
+  title: 'Bài tập bổ trợ Global Success lớp 5 - Học kỳ 1',
+  sub: 'Theo từng Unit trong sách Extra Workbook 5, học lần lượt từ Unit 1. Mỗi Unit có khung ngữ pháp và bài luyện tập.'
+};
+window.UNITS = window.UNITS || {};
+var C = function(s,o,a){ return {s:s, o:o, a:a}; };
+var T = function(s,a){ return {s:s, a:a}; };
+var G = function(s,a){ return {s:s, a:a}; };
+window.UNITS['g5h1-u2'] = {
+  id:'g5h1-u2', book:'Extra Workbook 5 (Global Success) - Học kỳ 1', bookShort:'Extra Workbook 5', lesson:2, unitLabel:'Unit 2',
+  group:'gs5-hk1', groupOrder:2,
+  title:'Our home - Nhà của chúng mình', topicKey:'unit 2 our home nha cua chung minh dia chi address lop 5',
+  can:'Em hỏi và trả lời được về nơi mình sống, địa chỉ nhà và ngôi nhà của mình.',
+  grammar:[
+    { h:'1. Hỏi xem ai đó có sống ở nơi nào đó không', icon:'book',
+      body:[
+        'F::Do you live in this/that ...?<span class="ex">Bạn có sống ở ... này/kia không?</span>',
+        'F::Yes, I do. / No, I don\'t.<span class="ex">Đúng vậy. / Không phải.</span>',
+        '<p>Ví dụ: Do you live in this house? - <span class="hl">Yes, I do.</span> (Vâng, đúng vậy.)</p>'
+      ],
+      tip:'<span class="hl">this</span> dùng cho vật ở gần, <span class="hl">that</span> dùng cho vật ở xa.' },
+    { h:'2. Hỏi và trả lời về địa chỉ', icon:'scale',
+      body:[
+        'F::What\'s your address?<span class="ex">Địa chỉ của bạn là gì?</span>',
+        'F::It\'s ...<span class="ex">Địa chỉ là ...</span>',
+        '<p>Ví dụ: What\'s your address? - <span class="hl">It\'s</span> 116 Hoa Binh Street. (Địa chỉ là số 116 đường Hòa Bình.)</p>'
+      ],
+      tip:'Trả lời theo mẫu: số nhà + tên đường (ví dụ: 116 Hoa Binh Street).' }
+  ],
+  acts:[
+    { id:'g5h1-u2-a1', title:'Exercise 4. Circle the odd one out.', type:'choice', star:1,
+      instr:'Khoanh vào từ khác loại với ba từ còn lại. (Ví dụ: city, village, mountains là nơi chốn; live là động từ, nên khoanh D.)',
+      huong:'Xác định nhóm chung của ba từ còn lại (nơi ở, kích thước, màu sắc, món ăn...), rồi chọn từ không thuộc nhóm đó.',
+      items:[ C('city / village / mountains / live',['city','village','mountains','live'],3),
+              C('big / street / small / large',['big','street','small','large'],1),
+              C('beautiful / house / building / flat',['beautiful','house','building','flat'],0),
+              C('street / road / lane / city',['street','road','lane','city'],3),
+              C('pizza / brown / sandwich / chicken',['pizza','brown','sandwich','chicken'],1) ] },
+    { id:'g5h1-u2-a2', title:'Exercise 5. Read and number the sentences in the correct order.', type:'gap', star:2,
+      instr:'Đọc đoạn hội thoại rồi đánh số thứ tự 1 đến 5 vào chỗ trống. (Ví dụ: Lời chào của Tony là câu đầu tiên.)',
+      huong:'Tìm câu chào đầu tiên, rồi câu hỏi của cô Hà, câu trả lời của Tony. Câu hỏi "where do you live now" đứng trước câu trả lời về nơi ở hiện tại.',
+      items:[ G('A. Tony: I lived in a small and pretty town near London. ___',['3']),
+              G('B. Ms Ha: And where do you live now in Ha Noi? ___',['4']),
+              G('C. Tony: Good morning, Ms Ha. I\'m in Hoan Kiem district. I\'m your new pupil. ___',['1']),
+              G('D. Ms Ha: Hi, Tony. Nice to meet you. Where did you live in Britain? ___',['2']),
+              G('E. Tony: I live in a beautiful and quiet house near West Lake. ___',['5']) ] },
+    { id:'g5h1-u2-a3', title:'Exercise 6. Find the mistakes in each sentence and rewrite the correct sentence.', type:'type', star:3,
+      instr:'Tìm lỗi sai trong mỗi câu rồi viết lại câu đúng. (Ví dụ: "I lives in this building." sửa thành "I live in this building.")',
+      huong:'Sau "don\'t/doesn\'t" dùng động từ nguyên mẫu, không thêm s. Chú ý số ít/số nhiều của danh từ đi với "lots of".',
+      items:[ T('I don\'t likes living in the city because it\'s too noisy.', ['I don\'t like living in the city because it\'s too noisy.']),
+              T('There are lots of car and motorbikes in my city.', ['There are lots of cars and motorbikes in my city.']),
+              T('Do you lives in that houses? - Yes, I do.', ['Do you live in that house? - Yes, I do.']) ] },
+    { id:'g5h1-u2-a4', title:'Exercise 7. Write the questions for the answers.', type:'type', star:3,
+      instr:'Viết câu hỏi cho mỗi câu trả lời. (Ví dụ: I live in the countryside. - Where do you live?)',
+      huong:'Đọc câu trả lời để đoán câu hỏi: nơi sống hỏi bằng "Where", địa chỉ hỏi bằng "What\'s your address?", "Yes, I do" hỏi bằng "Do you...?".',
+      items:[ T('I live in the countryside.', ['Where do you live?','Where do you live now?']),
+              T('I\'m Lan. I\'m nine years old. I\'m in grade 4.', ['Can you tell me about yourself?']),
+              T('Yes, I do. I live in this building.', ['Do you live in this building?']),
+              T('I like lemonade.', ['What\'s your favourite drink?','What do you like to drink?']),
+              T('I like playing table tennis.', ['What\'s your favourite sport?','What\'s your hobby?']) ] },
+    { id:'g5h1-u2-a5', title:'Exercise 8. Reorder the words to make the correct sentences.', type:'type', star:2,
+      instr:'Sắp xếp các từ thành câu đúng. (Ví dụ: "Do you live in that flat?" là câu hỏi đúng.)',
+      huong:'Câu hỏi có "Do you" thì đặt "Do" trước chủ ngữ. Câu có "live in" thì nơi chốn đứng sau "in".',
+      items:[ T('you/ Do / that / flat ?/ in / live', ['Do you live in that flat?']),
+              T('live / My / in / a / house. / big / grandparents', ['My grandparents live in a big house.']),
+              T('village / My / beautiful / is.', ['My village is beautiful.']),
+              T('this / building/ He / lives / in / parents. / with / his', ['He lives in this building with his parents.']),
+              T('I/ don\'t. / No / in/ live / Lotus Building. / I', ['No, I don\'t live in Lotus Building.']) ] },
+    { id:'g5h1-u2-a6', title:'Exercise 8. Underline the incorrect word and rewrite the correct one.', type:'type', star:3,
+      instr:'Gạch chân từ sai rồi viết lại câu đúng. (Ví dụ: "Where are you live?" sửa thành "Where do you live?")',
+      huong:'Với câu hỏi có "Where/Do", động từ là nguyên mẫu. Với "He/She/Nam" thì động từ thêm s.',
+      items:[ T('Where are you live?', ['Where do you live?']),
+              T('I lives in this building.', ['I live in this building.']),
+              T('Do your live in 90 Pineapple street?', ['Do you live in 90 Pineapple Street?']),
+              T('Nam and Phong lives at 50 Ba Trieu Street.', ['Nam and Phong live at 50 Ba Trieu Street.']) ] },
+    { id:'g5h1-u2-a7', title:'Exercise 9. Circle the correct answer.', type:'choice', star:2,
+      instr:'Khoanh vào đáp án đúng. (Ví dụ: "Where does she live?" dùng "does" vì chủ ngữ là she.)',
+      huong:'Chọn từ để hỏi đúng nghĩa (where: ở đâu), và trợ động từ đúng với chủ ngữ (do cho I/you, does cho he/she).',
+      items:[ C('___ do you live? - I live at 50 Apple street.',['where','Were','how','when\'s'],0),
+              C('Where ___ she live?',['do','does','was','is'],1),
+              C('Do you ___ in that house?',['lives','like','likes','live'],3),
+              C('Can you tell me ___ yourself?',['above','about','with','for'],1),
+              C('What\'s your address? - It ___ 15 Tran Phu Street.',['were','was','are','is'],3) ] },
+    { id:'g5h1-u2-a8', title:'Exercise 2. Read and match.', type:'match', star:2,
+      instr:'Đọc số ở cột trái rồi nối với cách đọc đúng ở cột phải. Bấm một số rồi bấm cách đọc tương ứng. (Ví dụ: 38 nối với Thirty eight.)',
+      huong:'Đọc từng số và tách thành hàng chục và hàng đơn vị (ví dụ 93 gồm ninety và three). Số từ 100 trở lên có "hundred and" trước phần còn lại. Chọn đúng rồi kiểm tra lại.',
+      items:[ {s:'93', a:0}, {s:'116', a:1}, {s:'38', a:2}, {s:'23', a:3} ],
+      right:['Ninety three', 'One hundred and sixteen', 'Thirty eight', 'Twenty three'] },
+    { id:'g5h1-u2-a9', title:'Exercise 3. Find and circle the correct words.', type:'type', star:2,
+      instr:'Tìm từ đúng ẩn trong dãy chữ cái rồi viết ra. (Ví dụ: Dbnbuildingtd = building.)',
+      huong:'Bỏ các chữ cái thừa ở đầu và cuối, còn lại là một từ quen thuộc về nhà ở.',
+      items:[ T('Dbnbuildingtd', ['building']), T('Sdflatthk', ['flat']), T('Ashousekt', ['house']), T('Asfstreetuie', ['street']),
+              T('Atetowergu', ['tower']), T('Sdtwentytyjk', ['twenty']), T('Afaddressnv', ['address']) ] },
+    { id:'g5h1-u2-a10', title:'Exercise 4. Read and complete with What, Where or Who.', type:'gap', star:2,
+      instr:'Điền What, Where hoặc Who vào chỗ trống. (Ví dụ: ___ are you from? - I\'m from Da Nang. = Where)',
+      huong:'Xem câu trả lời: nơi chốn (I\'m from..., I live in...) dùng Where; địa chỉ, miêu tả (It\'s...) dùng What; người (I live with my grandparents) dùng Who.',
+      items:[ G('___ are you from? - I\'m from Da Nang.',['Where']),
+              G('___ is your address? - It\'s Flat 10, North Tower.',['What']),
+              G('___ is your hometown like? - It\'s small and quiet.',['What']),
+              G('___ is your hometown? - It\'s Quang Binh Province.',['What']),
+              G('___ do you live with? - I live with my grandparents.',['Who']),
+              G('___ do you live? - I live in Ho Chi Minh city.',['Where']) ] },
+    { id:'g5h1-u2-a11', passage:"Phong lives with his grandparents in Ha Noi. His address is 35, Hang Bai Street, Hoan Kiem District. The family lives on the sixth floor of Xuan Mai Tower. Their flat is big with five rooms. Phong likes his place because it is in the city centre and near his school.", title:'Exercise 5. Read and tick True or False.', type:'choice', star:2,
+      instr:'Đọc đoạn văn rồi chọn True hoặc False. (Ví dụ: Câu 0: Phong sống với ông bà ở thị trấn nhỏ là False, vì đoạn văn nói ở Hà Nội.)',
+      huong:'Đối chiếu từng câu với đoạn văn: địa chỉ (35 Hang Bai Street), tòa nhà (Xuan Mai Tower), số phòng (five rooms), nơi ở (city centre).',
+      items:[ C('Blue Sky Tower is at 35, Hang Bai Street, Hoan Kiem District.',['True','False'],1),
+              C('Phong\'s flat is big with five rooms on the 6th floor.',['True','False'],0),
+              C('Phong doesn\'t like living in the city centre.',['True','False'],1),
+              C('Phong\'s school is near Xuan Mai tower.',['True','False'],0) ] },
+    { id:'g5h1-u2-a12', title:'Exercise 6. Read and complete.', type:'gap', star:2,
+      instr:'Đọc đoạn văn của Lan rồi điền từ trong khung: village, family, hometown, far, river, good, love. (Ví dụ: "Da Nang is my ___" = hometown.)',
+      huong:'Đọc đoạn văn một lần. Mỗi chỗ trống chọn một từ, mỗi từ dùng một lần.',
+      items:[ { s:'My name is Lan. Da Nang is my (1) ___. I live in a small and quiet (2) ___. My home is near a (3) ___. I live with my (4) ___. My school is not (5) ___ from home. I have some (6) ___ friends. They also go to the same school. I (7) ___ my hometown very much.', a:[['hometown'],['village'],['river'],['family'],['far'],['good'],['love']], multi:true, ph:['(1)','(2)','(3)','(4)','(5)','(6)','(7)'] } ] },
+    { id:'g5h1-u2-a13', passage:"Mai is my friend. She lives with her parents in Da Nang. Her address is 79 Nguyen Van To Street, Hai Chau District. It is not far from My Khe beach. There are two floors in Mai's house. There are three bedrooms, three bathrooms, a kitchen and a sitting room. Mai likes her house because it is pretty and comfortable. Lan also likes her city because it is a beautiful coastal city.", title:'Exercise 7. Read and answer the questions.', type:'type', star:3,
+      instr:'Đọc đoạn văn về Mai rồi trả lời câu hỏi bằng câu đầy đủ. (Ví dụ: Where does Mai live? - She lives in Da Nang.)',
+      huong:'Câu hỏi Where/What/Who lấy đúng thông tin trong đoạn: nơi sống, địa chỉ, người sống cùng, mô tả nhà.',
+      items:[ T('Where does Mai live?', ['She lives in Da Nang.','Mai lives in Da Nang.']),
+              T('What is her address?', ['Her address is 79 Nguyen Van To Street, Hai Chau District.','It\'s 79 Nguyen Van To Street, Hai Chau District.']),
+              T('Who does she live with?', ['She lives with her parents.']),
+              T('What is her house like?', ['It has two floors, three bedrooms, three bathrooms, a kitchen and a sitting room.']) ] }
+  ]
+};
+})();
+
+(function(){
+window.GROUPS = window.GROUPS || {};
+window.GROUPS['gs5-hk1'] = window.GROUPS['gs5-hk1'] || {
+  title: 'Bài tập bổ trợ Global Success lớp 5 - Học kỳ 1',
+  sub: 'Theo từng Unit trong sách Extra Workbook 5, học lần lượt từ Unit 1. Mỗi Unit có khung ngữ pháp và bài luyện tập.'
+};
+window.UNITS = window.UNITS || {};
+var C = function(s,o,a){ return {s:s, o:o, a:a}; };
+var T = function(s,a){ return {s:s, a:a}; };
+var G = function(s,a){ return {s:s, a:a}; };
+window.UNITS['g5h1-u3'] = {
+  id:'g5h1-u3', book:'Extra Workbook 5 (Global Success) - Học kỳ 1', bookShort:'Extra Workbook 5', lesson:3, unitLabel:'Unit 3',
+  group:'gs5-hk1', groupOrder:3,
+  title:'My foreign friends - Những người bạn nước ngoài', topicKey:'unit 3 my foreign friends quoc tich nationality ban nuoc ngoai lop 5',
+  can:'Em hỏi và trả lời được về quốc tịch và tính cách của bạn bè.',
+  grammar:[
+    { h:'1. Hỏi về quốc tịch của ai đó', icon:'book',
+      body:[
+        'F::What nationality is he/she?<span class="ex">Quốc tịch của anh ấy/cô ấy là gì?</span>',
+        'F::He\'s/She\'s a ...<span class="ex">Anh ấy/Cô ấy là người ...</span>',
+        '<p>Ví dụ: What nationality is he? - <span class="hl">He\'s</span> Japanese. (Anh ấy là người Nhật.)</p>'
+      ],
+      tip:'Quốc tịch viết hoa chữ đầu: Vietnamese, American, Japanese, Malaysian. Với "American", dùng "an" trước từ bắt đầu bằng nguyên âm.' },
+    { h:'2. Hỏi về tính cách của ai đó', icon:'scale',
+      body:[
+        'F::What\'s he/she like?<span class="ex">Anh ấy/Cô ấy như thế nào?</span>',
+        'F::He\'s/She\'s ...<span class="ex">Anh ấy/Cô ấy là ... (tính từ)</span>',
+        '<p>Ví dụ: What\'s he like? - <span class="hl">He\'s</span> friendly. (Anh ấy thân thiện.)</p>'
+      ],
+      tip:'Dùng tính từ để tả tính cách: friendly, active, helpful, clever.' }
+  ],
+  acts:[
+    { id:'g5h1-u3-a1', title:'Exercise 1. Circle the odd one out.', type:'choice', star:1,
+      instr:'Khoanh vào từ khác loại với hai từ còn lại. (Ví dụ: America, India là tên nước; Chinese là quốc tịch; nên với nhóm này khoanh Chinese.)',
+      huong:'Xác định nhóm: tên nước, quốc tịch, tính từ tả người, môn thể thao, màu sắc, nơi chốn. Chọn từ không thuộc nhóm của hai từ còn lại.',
+      items:[ C('America / India / Chinese',['America','India','Chinese'],2),
+              C('clever / Malaysia / Korea',['clever','Malaysia','Korea'],0),
+              C('friendly / helpful / France',['friendly','helpful','France'],2),
+              C('Japanese / Australian / street',['Japanese','Australian','street'],2),
+              C('baseball / pink / tennis',['baseball','pink','tennis'],1) ] },
+    { id:'g5h1-u3-a2', title:'Exercise 3. Fill in the blanks.', type:'gap', star:2,
+      instr:'Điền đại từ hoặc động từ to be vào chỗ trống. (Ví dụ: What nationality are you? - ___ am Japanese. = I)',
+      huong:'Đại từ theo câu hỏi: you → I, she → She, he → is (He is), they → They. Động từ "am" đi với I, "is" đi với he/she, "are" đi với you/they.',
+      items:[ G('What nationality are you? - ___ am Japanese.',['I']),
+              G('What nationality is she? - ___ is Malaysian.',['She']),
+              G('What nationality is he? - He ___ Chinese.',['is']),
+              G('What are they? - ___ are Australian.',['They']) ] },
+    { id:'g5h1-u3-a3', title:'Exercise 4. Read and write.', type:'gap', star:2,
+      instr:'Đọc câu rồi viết We\'re, She\'s, He\'s hoặc They\'re vào chỗ trống. (Ví dụ: Tony is seven years old. ___ British. = He\'s)',
+      huong:'Xác định chủ ngữ: một người nam (He\'s), một người nữ (She\'s), hai người trở lên (They\'re), có bạn và tôi (We\'re).',
+      items:[ G('1. Tony is seven years old. ___ British.',['He\'s']),
+              G('2. Lily is nine years old. ___ Australian.',['She\'s']),
+              G('3. Nam and I are friends. ___ Vietnamese.',['We\'re']),
+              G('4. Anna and Lily are sisters. ___ American.',['They\'re']) ] },
+    { id:'g5h1-u3-a4', title:'Exercise 5. Complete the email using the correct form of be.', type:'gap', star:2,
+      instr:'Điền am, is hoặc are vào chỗ trống trong bức thư. (Ví dụ: How ___ you? = are)',
+      huong:'Xem chủ ngữ đứng trước chỗ trống: you dùng are, your birthday/your hobby (số ít) dùng is.',
+      items:[ { s:'Hi Peter. How ___ you? Where ___ you from? What nationality ___ you? I have only your mail address. When ___ your birthday? What ___ your hobby?', a:[['are'],['are'],['are'],['is'],['is']], multi:true, ph:['be','be','be','be','be'] } ] },
+    { id:'g5h1-u3-a5', passage:"Hi. My name's Akiko. I live in Tokyo, Japan. I'm Japanese. I'm a student at Sunflower Primary School. I'm in grade 4A. I have many friends. Tony is one of my best friends. We are in the same class. Tony is Australian. He is from Sydney. We like playing basketball after school.", title:'Exercise 6. Read and write Yes or No.', type:'choice', star:2,
+      instr:'Đọc đoạn văn của Akiko rồi chọn Yes hoặc No. (Ví dụ: Akiko is Japanese. - Yes)',
+      huong:'Tìm thông tin đúng trong đoạn văn. Chú ý: "one of my best friends" không có nghĩa là "best friend" duy nhất; "playing basketball" không phải football.',
+      items:[ C('Akiko is Japanese. (Ví dụ)',['Yes','No'],0),
+              C('She is Tony\'s best friend.',['Yes','No'],1),
+              C('Her school is in Sydney, Australia.',['Yes','No'],1),
+              C('Tony and Akiko are American.',['Yes','No'],1),
+              C('They are in grade 4A.',['Yes','No'],0),
+              C('He likes playing football with Akiko after school.',['Yes','No'],1) ] },
+    { id:'g5h1-u3-a6', passage:"Hello everyone. My name is Jack. I'm from Australia. I'm Australian. I'm a pupil at Sun flower Primary school. I have got a lot of friends. There are thirty-five students in my class. They are from different countries. Lisa is British. James and Joe are American. Akiko is Japanese. We often play badminton and hide and seek together in our free time.", title:'Exercise 7. Read again and answer the questions.', type:'type', star:3,
+      instr:'Đọc lại đoạn văn của Jack rồi trả lời câu hỏi bằng câu đầy đủ. (Ví dụ: Where is Jack from? - He is from Australia.)',
+      huong:'Tìm câu chứa thông tin cần hỏi trong đoạn văn: quê quán (from), quốc tịch (Australian), việc làm vào giờ rảnh (play...).',
+      items:[ T('Where is Jack from?', ['He is from Australia.','He\'s from Australia.','Jack is from Australia.']),
+              T('What nationality is Joe?', ['He is American.','He\'s American.','Joe is American.']),
+              T('What do they usually do in their free time?', ['They often play badminton and hide and seek.','They usually play badminton and hide and seek.']),
+              T('What nationality is Akiko?', ['She is Japanese.','She\'s Japanese.','Akiko is Japanese.']) ] },
+    { id:'g5h1-u3-a7', title:'Exercise 8. Write the sentences. (Ví dụ như mẫu đầu tiên)', type:'type', star:3,
+      instr:'Viết câu theo mẫu: tên + quốc tịch, rồi viết thêm câu tả tính cách. (Ví dụ: Mary / Australian / cute. = Mary is Australian. She\'s cute.)',
+      huong:'Câu 1: "[Tên] is [quốc tịch]." Câu 2: thay tên bằng He/She rồi viết "He\'s/She\'s" và tính từ.',
+      items:[ T('Jack / American / active', ['Jack is American. He\'s active.']),
+              T('Jane / Malaysian / friendly', ['Jane is Malaysian. She\'s friendly.']),
+              T('Akiko / Japanese / helpful', ['Akiko is Japanese. She\'s helpful.']),
+              T('Chen / Chinese / clever', ['Chen is Chinese. He\'s clever.']) ] },
+    { id:'g5h1-u3-a8', passage:"Hello, my name is Akiko. I am from Japan. I'm Japanese. I speak Japanese and English. My school is an international school. It is Rose International School. I have got a lot of friends. There are twenty students in my class. They are from different countries. Linda is from America. She is American. She's friendly. She likes helping her classmates. Jack and Jill are from the Australia. They are Australian. They're active. They like making new friends. Tony is from Malaysia. He is Malaysian. He's clever. He can solve maths problems. Alex is from France, but her mom is from Vietnam. She is French. We often play badminton and hide and seek together in our free time. I like living and studying here so much.", title:'Exercise 4. Read and write.', type:'type', star:3,
+      instr:'Đọc đoạn văn của Akiko rồi trả lời câu hỏi. (Ví dụ: What nationality is Akiko? - She is Japanese.)',
+      huong:'Tìm thông tin trong đoạn văn: quốc tịch thường nằm sau "is" hoặc "They are"; tính cách thường nằm sau "She is/He is" hoặc "She\'s".',
+      items:[ T('What nationality is Akiko?', ['She is Japanese.','She\'s Japanese.','Japanese.']),
+              T('What nationality is Linda?', ['She is American.','She\'s American.','American.']),
+              T('What\'s Linda like?', ['She\'s friendly.','She is friendly.']),
+              T('What nationality are Jack and Jill?', ['They are Australian.','They\'re Australian.']),
+              T('What\'s Tony like?', ['He\'s clever.','He is clever.']) ] },
+    { id:'g5h1-u3-a9', passage:"I have a new friend. Her name is Jenny. She is Australian. She is in Grade 5. She has long hair and round face. She is active. She always plays sports in the sports centre. At home, she does yoga in the morning. She is very helpful, too. At school, she likes helping her friends. At home, she washes the dishes and cleans the floor. She has a lot of friends. Everyone loves Jenny.", title:'Exercise 5. Read and complete.', type:'type', star:3,
+      instr:'Đọc đoạn văn về Jenny rồi điền thông tin vào bảng. (Ví dụ: Her name: Jenny)',
+      huong:'Đọc đoạn văn, tìm tên, quốc tịch, ngoại hình (hair, face), tính cách (active, helpful).',
+      items:[ T('Her name', ['Jenny']),
+              T('Her nationality', ['Australian']),
+              T('Her appearance (ngoại hình)', ['She has long hair and round face.','long hair and round face']),
+              T('Her personality (tính cách)', ['She is active and helpful.','active and helpful']) ] },
+    { id:'g5h1-u3-a10', title:'Exercise 7. Read and match.', type:'match', star:2,
+      instr:'Nối câu hỏi ở cột trái với câu trả lời ở cột phải. Bấm một câu hỏi rồi bấm câu trả lời tương ứng. (Ví dụ: Where do you live? nối với I live in the countryside.)',
+      huong:'Đọc câu hỏi, tìm câu trả lời có cùng từ để hỏi: Where (ở đâu), What... like (như thế nào), What nationality (quốc tịch), What is your address (địa chỉ).',
+      items:[ {s:'Where do you live?', a:4}, {s:'Can you tell me about yourself?', a:3}, {s:'What is she like?', a:0}, {s:'What nationality is he?', a:1}, {s:'What is your address?', a:2} ],
+      right:['She\'s active.', 'He\'s Japanese.', 'It\'s 100, Oxford Street.', 'I\'m Danny. I\'m in grade 4.', 'I live in the countryside.'] },
+    { id:'g5h1-u3-a11', title:'Exercise 8. Reorder the words to make the correct sentences.', type:'type', star:2,
+      instr:'Sắp xếp các từ thành câu đúng. (Ví dụ: "What nationality is she?" là câu hỏi đúng.)',
+      huong:'Câu hỏi bắt đầu bằng từ để hỏi (What). Chú ý động từ to be đứng sau chủ ngữ.',
+      items:[ T('nationality / she ?/ What / is', ['What nationality is she?']),
+              T('likes / she / helping / classmates. / her', ['She likes helping her classmates.']),
+              T('What / he/ like ?/ is', ['What is he like?']),
+              T('see/ You/ can / River /there. / the/ Thames', ['You can see the River Thames there.']),
+              T('is/he/ and/ clever/ active.', ['He is clever and active.']),
+              T('address/ My / is/ Oxford Street./ 90', ['My address is 90 Oxford Street.']),
+              T('near/ It / sports / is/ centre./ the', ['It is near the sports centre.']) ] },
+    { id:'g5h1-u3-a12', title:'Exercise 9. Translate into English.', type:'type', star:3,
+      instr:'Dịch các câu tiếng Việt sang tiếng Anh. (Ví dụ: Quốc tịch của anh ấy là gì? = What nationality is he?)',
+      huong:'Dùng mẫu đã học: What nationality is he/she? - He\'s/She\'s ...; What\'s he/she like? - He\'s/She\'s ...; What\'s your address?',
+      items:[ T('Quốc tịch của anh ấy là gì?', ['What nationality is he?']),
+              T('Cô ấy là người Ấn Độ.', ['She is Indian.','She\'s Indian.']),
+              T('Anh ấy như thế nào?', ['What\'s he like?']),
+              T('Cô ấy thì thông minh.', ['She\'s clever.','She is clever.']),
+              T('Địa chỉ của bạn là gì?', ['What\'s your address?','What is your address?']) ] }
+  ]
+};
+})();
+
+(function(){
+window.GROUPS = window.GROUPS || {};
+window.GROUPS['gs5-hk1'] = window.GROUPS['gs5-hk1'] || {
+  title: 'Bài tập bổ trợ Global Success lớp 5 - Học kỳ 1',
+  sub: 'Theo từng Unit trong sách Extra Workbook 5, học lần lượt từ Unit 1. Mỗi Unit có khung ngữ pháp và bài luyện tập.'
+};
+window.UNITS = window.UNITS || {};
+var C = function(s,o,a){ return {s:s, o:o, a:a}; };
+var T = function(s,a){ return {s:s, a:a}; };
+var G = function(s,a){ return {s:s, a:a}; };
+window.UNITS['g5h1-u4'] = {
+  id:'g5h1-u4', book:'Extra Workbook 5 (Global Success) - Học kỳ 1', bookShort:'Extra Workbook 5', lesson:4, unitLabel:'Unit 4',
+  group:'gs5-hk1', groupOrder:4,
+  title:'Our free-time activities - Hoạt động giờ rảnh', topicKey:'unit 4 free time activities hoat dong thoi gian ranh adverbs always usually often sometimes never lop 5',
+  can:'Em hỏi và nói được về sở thích, việc làm lúc rảnh và cuối tuần, dùng đúng trạng từ chỉ tần suất.',
+  grammar:[
+    { h:'1. Hỏi ai đó thích làm gì vào thời gian rảnh', icon:'book',
+      body:[
+        'F::What do you like doing in your free time?<span class="ex">Bạn thích làm gì vào thời gian rảnh?</span>',
+        'F::I like + V-ing<span class="ex">Tôi thích làm việc gì đó (đuôi -ing)</span>',
+        '<p>Ví dụ: What do you like doing in your free time? - <span class="hl">I like watering</span> the flowers. (Tôi thích tưới hoa.)</p>'
+      ],
+      tip:'Sau "like" dùng động từ thêm <span class="hl">-ing</span>: watering, surfing, playing, going.' },
+    { h:'2. Hỏi ai đó làm gì vào cuối tuần', icon:'scale',
+      body:[
+        'F::What do you do at the weekend?<span class="ex">Bạn làm gì vào cuối tuần?</span>',
+        '<p>Ví dụ: What do you do at the weekend? - I <span class="hl">often</span> play table tennis. (Tôi thường chơi bóng bàn.)</p>'
+      ],
+      tip:'Trạng từ tần suất đứng <span class="hl">trước</span> động từ thường: I often play, I usually read.' },
+    { h:'3. Trạng từ chỉ tần suất', icon:'trophy',
+      body:[
+        'F::always &gt; usually &gt; often &gt; sometimes &gt; never<span class="ex">luôn luôn &gt; thường xuyên &gt; thường &gt; thỉnh thoảng &gt; không bao giờ</span>',
+        '<p>I <span class="hl">usually</span> play tennis at 4:30. (Tôi thường chơi quần vợt lúc 4 giờ 30.)</p>',
+        '<p>He <span class="hl">often eats</span> bananas. (Anh ấy thường ăn chuối.) - Với he/she/it, động từ thêm s/es.</p>'
+      ],
+      tip:'Với "never": He never plays the violin. Không thêm "not" hay "don\'t" vì never đã mang nghĩa phủ định.' }
+  ],
+  acts:[
+    { id:'g5h1-u4-a1', title:'Exercise 3. Complete the words with i, n, g, t or a.', type:'type', star:1,
+      instr:'Viết thêm chữ còn thiếu để hoàn thành từ. (Ví dụ: goin_ = going, thêm chữ g.)',
+      huong:'Đọc từ ra thành tiếng, xem chỗ trống là chữ nào trong các chữ i, n, g, t, a.',
+      items:[ T('goin_', ['going']), T('W_tch_ng', ['watching']), T('Wa_ering', ['watering']) ] },
+    { id:'g5h1-u4-a2', title:'Exercise 6. Read and fill in the blanks.', type:'gap', star:2,
+      instr:'Đọc đoạn văn rồi điền từ trong khung: club, surfing, going, watering, violin, free. (Ví dụ: "in our ___ time" = free.)',
+      huong:'Sau "likes/like" dùng dạng -ing (going, watering, surfing). Chọn danh từ chỉ nhạc cụ hoặc câu lạc bộ cho chỗ trống còn lại.',
+      items:[ { s:'What do we like doing in our (1) ___ time? My father likes (2) ___ for a walk in the park. My mother likes (3) ___ the flowers. My sister likes (4) ___ the Internet. What about me? Well, I like playing the (5) ___. I go to the Music (6) ___ on Tuesday and Thursday.', a:[['free'],['going'],['watering'],['surfing'],['violin'],['club']], multi:true, ph:['(1)','(2)','(3)','(4)','(5)','(6)'] } ] },
+    { id:'g5h1-u4-a3', title:'Exercise 7. Circle the correct words to complete the sentences.', type:'choice', star:2,
+      instr:'Khoanh vào từ đúng để hoàn thành câu. (Ví dụ: "What ___ your father like doing?" dùng "does" vì chủ ngữ là your father.)',
+      huong:'Với "What do/does + chủ ngữ": chủ ngữ I/you/we/they dùng do; he/she/it dùng does. Sau does động từ không thêm s.',
+      items:[ C('What do you like doing in ___ free time?',['your','my'],0),
+              C('What ___ your father like doing in his free time?',['do','does'],1),
+              C('What does your mother like doing in ___ free time?',['their','her'],1),
+              C('What does your brother ___ doing in his free time?',['like','likes'],0),
+              C('They like surfing the internet in ___ free time.',['their','our'],0),
+              C('We like watering the flowers in ___ free time.',['their','our'],1) ] },
+    { id:'g5h1-u4-a4', title:'Exercise 8. Reorder the words to make the correct sentences.', type:'type', star:3,
+      instr:'Sắp xếp các từ thành câu đúng. (Ví dụ: "Where do you live?" là câu hỏi đúng.)',
+      huong:'Câu hỏi bắt đầu bằng từ để hỏi hoặc trợ động từ do/does. Câu có "like" thì động từ sau đó thêm -ing.',
+      items:[ T('do/ Where/ live ?/ you', ['Where do you live?']),
+              T('does / in / your brother / What / do / free time? / his', ['What does your brother do in his free time?']),
+              T('do / your / do / free / What / time? / in / you', ['What do you do in your free time?']),
+              T('his / free / in / for/ walk / a/ father / My / doesn\'t / going/ time/ like', ['My father doesn\'t like going for a walk in his free time.']),
+              T('free/ like/ I / internet/ my/ the/ time/ surfing/ in/.', ['I like surfing the internet in my free time.']),
+              T('does/ how/ go/ your/ the/ sister/ cinema/ often/ to/ ?', ['How often does your sister go to the cinema?']),
+              T('Nam/ in/ pictures/ draws/ free/ usually/ his/ time/ .', ['Nam usually draws pictures in his free time.']),
+              T('play/ I/ my/ badminton/ friends/ free/ in/ my/ often/ with/ time/.', ['I often play badminton with my friends in my free time.']),
+              T('free / skating / Do / your / you / in / time? / go', ['Do you go skating in your free time?']),
+              T('does / time? / her/ free/ What / your / sister / in / do', ['What does your sister do in her free time?']) ] },
+    { id:'g5h1-u4-a5', title:'Exercise 3. Read and put a tick (✓) in the correct box.', type:'choice', star:2,
+      instr:'Đọc hai câu, chọn câu viết đúng ngữ pháp. (Ví dụ: "I usually play tennis at 4:30." đúng vì trạng từ đứng trước động từ thường.)',
+      huong:'Trạng từ tần suất đứng trước động từ thường. Với he/she/it, động từ thêm s/es. Sau she/he/it không dùng "goes/like" lẫn với "does".',
+      items:[ C('Câu 1: "I usually play tennis at 4:30." / "I play usually tennis at 4:30."',['I usually play tennis at 4:30.','I play usually tennis at 4:30.'],0),
+              C('Câu 2: "He often eat bananas." / "He often eats bananas."',['He often eat bananas.','He often eats bananas.'],1),
+              C('Câu 3: "She always goes fishing." / "She always go fishing."',['She always goes fishing.','She always go fishing.'],0),
+              C('Câu 4: "Lan usually reads stories." / "Lan usually read stories."',['Lan usually reads stories.','Lan usually read stories.'],0),
+              C('Câu 5: "I sometimes water the flowers." / "I sometimes waters the flowers."',['I sometimes water the flowers.','I sometimes waters the flowers.'],0),
+              C('Câu 6: "They never play the violin." / "They never plays the violin."',['They never play the violin.','They never plays the violin.'],0),
+              C('Câu 7: "They rarely surf the internet." / "They rarely surfs the internet."',['They rarely surf the internet.','They rarely surfs the internet.'],0),
+              C('Câu 8: "He often rides his bike in the park." / "He often ride his bike in the park."',['He often rides his bike in the park.','He often ride his bike in the park.'],0) ] },
+    { id:'g5h1-u4-a6', passage:"My dad and I have the same hobby. We both like fishing very much because it is a quiet sport. There are a lot of big trees around quiet ponds and rivers in our neighborhood. We often go fishing there. Dad and I can sit for hours to wait for the fish. We often talk about my study or our relatives.", title:'Exercise 5. Read and tick True or False.', type:'choice', star:2,
+      instr:'Đọc đoạn văn về bố và tôi đi câu cá, rồi chọn True hoặc False. (Ví dụ: "My father and I like different sports." là False.)',
+      huong:'Đối chiếu từng câu với đoạn văn. Nếu đoạn văn không nói đến điều đó thì không chọn True.',
+      items:[ C('My father and I like different sports. (Ví dụ)',['True','False'],1),
+              C('Fishing is a quiet sport.',['True','False'],0),
+              C('We often go fishing in the forest.',['True','False'],1),
+              C('My father and I often talk to each other while fishing.',['True','False'],0),
+              C('We can\'t sit long when we go fishing.',['True','False'],1),
+              C('We have friendly chats while fishing.',['True','False'],0) ] },
+    { id:'g5h1-u4-a7', passage:"My name is Linh. I'm ten years old. In my free time, I often read story books. My favorite story is Snow White and the Seven Dwarfs. I like reading books because it helps me widen knowledge. My father often watches sports programmes on TV because he is a big fan of football. My mother likes cooking. She usually cooks meals for our family. My brother, Phong likes playing sports. He often plays basketball in his free time. At weekend, my family goes camping or goes for a picnic. We go for a picnic once a month.", title:'Exercise 6. Read and answer the questions.', type:'type', star:3,
+      instr:'Đọc đoạn văn về Linh rồi trả lời các câu hỏi bằng câu đầy đủ. (Ví dụ: What does Linh do in her free time? - She often reads story books.)',
+      huong:'Tìm câu chứa thông tin trong đoạn văn: hoạt động, lý do (Because...), người và việc làm của họ.',
+      items:[ T('What does Linh do in her free time?', ['She often reads story books.','She often reads storybooks.']),
+              T('Why does she like reading books?', ['Because it helps her widen knowledge.','It helps her widen knowledge.']),
+              T('What does her father often do?', ['He often watches sports programmes on TV.']),
+              T('What does her mother like doing?', ['She likes cooking.','She likes cooking meals.']),
+              T('What does her brother do in his free time?', ['He often plays basketball in his free time.','He often plays basketball.']),
+              T('What do they do at weekend?', ['They go camping or go for a picnic.','They go camping or go for a picnic once a month.']) ] },
+    { id:'g5h1-u4-a8', title:'Exercise 1. Read, choose and write.', type:'gap', star:2,
+      instr:'Chọn động từ trong khung rồi viết vào chỗ trống: listen, read, ride, surf, go, play, water. (Ví dụ: "___ skating" = go)',
+      huong:'Đọc cụm từ đi sau động từ: go + skating/for a walk, read + stories, ride + a bike, water + the flowers, play + the piano, listen + to music, surf + the internet.',
+      items:[ G('1. ___ skating',['go']), G('2. ___ stories',['read']), G('3. ___ for a walk',['go']), G('4. ___ a bike',['ride']),
+              G('5. ___ the flowers',['water']), G('6. ___ the piano',['play']), G('7. ___ to music',['listen']), G('8. ___ the internet',['surf']) ] },
+    { id:'g5h1-u4-a9', title:'Exercise 3. Circle the odd one out.', type:'choice', star:1,
+      instr:'Khoanh vào từ khác loại với ba từ còn lại. (Ví dụ: city, village, mountains là nơi chốn; address là thông tin cá nhân, nên khoanh D.)',
+      huong:'Xác định nhóm chung của ba từ, chọn từ không cùng nhóm: nơi chốn, quốc tịch, môn thể thao, tính cách, trạng từ, nhạc cụ.',
+      items:[ C('city / village / mountains / address',['city','village','mountains','address'],3),
+              C('American / Australia / Vietnamese / Chinese',['American','Australia','Vietnamese','Chinese'],1),
+              C('tennis / football / English / baseball',['tennis','football','English','baseball'],2),
+              C('friend / active / clever / helpful',['friend','active','clever','helpful'],0),
+              C('always / water / sometimes / usually',['always','water','sometimes','usually'],1),
+              C('never / piano / violin / guitar',['never','piano','violin','guitar'],0) ] },
+    { id:'g5h1-u4-a10', title:'Exercise 5. Read and complete the dialogue.', type:'gap', star:2,
+      instr:'Đọc đoạn hội thoại rồi điền từ trong khung: time, ride, listen, twice, comic books. (Ví dụ: "What do you do in your free ___?" = time)',
+      huong:'Đọc hết đoạn hội thoại trước. "I often ___ my bike" dùng động từ nguyên mẫu sau often; "How often" trả lời bằng số lần, như "twice a week".',
+      items:[ { s:'Nam: What do you do in your free (1) ___? Nga: I often (2) ___ my bike in the park. What about you? Nam: I (3) ___ to music and read books. Nga: How often do you read books? Nam: (4) ___ a week. Nga: What book do you like reading? Nam: I like reading (5) ___.', a:[['time'],['ride'],['listen'],['twice'],['comic books']], multi:true, ph:['(1)','(2)','(3)','(4)','(5)'] } ] },
+    { id:'g5h1-u4-a11', title:'Exercise 6. Write the questions and answers.', type:'type', star:3,
+      instr:'Viết câu hoàn chỉnh từ các từ gợi ý. (Ví dụ: you / play football / free time = What do you like doing in your free time? - I like playing football.)',
+      huong:'Hỏi bằng "What do you like doing in your free time?" (với "you") hoặc "What does he like doing in his free time?" (với "he"). Trả lời bằng "I like + V-ing".',
+      items:[ T('you / surf the internet / free time', ['What do you like doing in your free time? - I like surfing the internet.']),
+              T('he / do karate / his free time', ['What does he like doing in his free time? - He likes doing karate.']),
+              T('you / watch films / free time', ['What do you like doing in your free time? - I like watching films.']),
+              T('she / read stories / her free time', ['What does she like doing in her free time? - She likes reading stories.']),
+              T('Your mother / water the flowers / her free time', ['What does your mother like doing in her free time? - She likes watering the flowers.']) ] },
+    { id:'g5h1-u4-a12', title:'Exercise 7. Read and match.', type:'match', star:2,
+      instr:'Nối câu hỏi ở cột trái với câu trả lời ở cột phải. Bấm một câu hỏi rồi bấm câu trả lời tương ứng. (Ví dụ: What do you do at the weekend? nối với I usually read stories.)',
+      huong:'Đọc từng câu hỏi, chọn câu trả lời đúng nghĩa: cuối tuần làm gì, sở thích, có thích không (Yes, I do), tính cách (She\'s friendly).',
+      items:[ {s:'What do you do at the weekend?', a:2}, {s:'What does your father do at the weekend?', a:3}, {s:'What do you like doing in your free time?', a:1}, {s:'Do you like playing the violin?', a:4}, {s:'What\'s she like?', a:0} ],
+      right:['She\'s friendly.', 'I like surfing the internet.', 'I usually read stories.', 'He often goes for a walk.', 'Yes, I do.'] },
+    { id:'g5h1-u4-a13', passage:"Linda likes read stories in her free time. She always plays the guitar at the weekend. She sometimes play the violin to entertain her family. She likes playing sports and games, too. She usually plays basketball on Saturdays and she often water the flowers on Sundays. She loves watching films on Sundays. Linda does not like ride her bike in the park. She rarely ride her bike in her free time.", title:'Exercise 8. Read and answer.', type:'type', star:3,
+      instr:'Đọc đoạn văn về Linda rồi trả lời câu hỏi. (Ví dụ: What does Linda always do at the weekend? - She always plays the guitar.)',
+      huong:'Tìm trạng từ tần suất (always, usually, often) trong đoạn văn để biết hoạt động và ngày. "On Sundays" là câu trả lời cho câu hỏi "When".',
+      items:[ T('What does Linda always do at the weekend?', ['She always plays the guitar.','She always plays the guitar at the weekend.']),
+              T('What does she usually do on Saturdays?', ['She usually plays basketball.','She usually plays basketball on Saturdays.']),
+              T('When does she often water the flowers?', ['She often waters the flowers on Sundays.','On Sundays.']),
+              T('Does Linda like playing sports and games?', ['Yes, she does.','Yes, she does. She likes playing sports and games.']) ] }
+  ]
+};
+})();
+
+(function(){
+window.GROUPS = window.GROUPS || {};
+window.GROUPS['gs5-hk1'] = window.GROUPS['gs5-hk1'] || {
+  title: 'Bài tập bổ trợ Global Success lớp 5 - Học kỳ 1',
+  sub: 'Theo từng Unit trong sách Extra Workbook 5, học lần lượt từ Unit 1. Mỗi Unit có khung ngữ pháp và bài luyện tập.'
+};
+window.UNITS = window.UNITS || {};
+var C = function(s,o,a){ return {s:s, o:o, a:a}; };
+var T = function(s,a){ return {s:s, a:a}; };
+var G = function(s,a){ return {s:s, a:a}; };
+window.UNITS['g5h1-u5'] = {
+  id:'g5h1-u5', book:'Extra Workbook 5 (Global Success) - Học kỳ 1', bookShort:'Extra Workbook 5', lesson:5, unitLabel:'Unit 5',
+  group:'gs5-hk1', groupOrder:5,
+  title:'My future job - Nghề nghiệp tương lai', topicKey:'unit 5 my future job nghe nghiep tuong lai would like to be lop 5',
+  can:'Em hỏi và nói được về nghề nghiệp mong muốn trong tương lai và lý do chọn nghề.',
+  grammar:[
+    { h:'1. Hỏi về nghề nghiệp mong muốn trong tương lai', icon:'book',
+      body:[
+        'F::What would you like to be in the future?<span class="ex">Bạn muốn trở thành gì trong tương lai?</span>',
+        'F::I\'d like to be ...<span class="ex">Tôi muốn trở thành ...</span>',
+        '<p>Ví dụ: What would you like to be in the future? - <span class="hl">I want to be</span> a firefighter. (Tôi muốn trở thành một người lính cứu hỏa.)</p>'
+      ],
+      tip:'Trước nghề nghiệp đếm được dùng <span class="hl">a</span> hoặc <span class="hl">an</span>: a teacher, an architect.' },
+    { h:'2. Hỏi lý do chọn nghề', icon:'scale',
+      body:[
+        'F::Why would you like to be a ...?<span class="ex">Tại sao bạn muốn trở thành ...?</span>',
+        'F::Because I\'d like to ...<span class="ex">Bởi vì tôi muốn ...</span>',
+        '<p>Ví dụ: Why would you like to be a teacher? - <span class="hl">Because I\'d like to teach</span> children. (Bởi vì tôi muốn dạy trẻ em.)</p>'
+      ],
+      tip:'Sau "Because I\'d like to" dùng động từ nguyên mẫu: teach, help, design, write.' }
+  ],
+  acts:[
+    { id:'g5h1-u5-a1', title:'Exercise 4. Read and match.', type:'match', star:2,
+      instr:'Nối câu hỏi ở cột trái với câu trả lời ở cột phải. Bấm một câu hỏi rồi bấm câu trả lời tương ứng. (Ví dụ: What would you like to be in the future? nối với I\'d like to be a writer.)',
+      huong:'Xem câu hỏi về ai, nghề gì, ý kiến thế nào. Câu trả lời có "I\'d like to be" hoặc "Yes, I want to be" thường trả lời câu hỏi về nghề của mình.',
+      items:[ {s:'What would you like to be in the future?', a:0}, {s:'Would you like to be a teacher?', a:1}, {s:'I want to be a doctor in the future. How about you?', a:2}, {s:'What would he like to be in the future?', a:3}, {s:'My sister would like to be a reporter in the future. What do you think of it?', a:4} ],
+      right:['I\'d like to be a writer. I can write stories for children.', 'Yes, I want to be a teacher.', 'I want to be a doctor, too. We can work together in the future.', 'He\'d like to be a firefighter.', 'I think it is great. Your sister will be a good reporter.'] },
+    { id:'g5h1-u5-a2', title:'Exercise 5. Underline the mistakes and correct them.', type:'type', star:3,
+      instr:'Gạch chân lỗi sai rồi viết lại câu đúng. (Ví dụ: "I like to be a doctor." sửa thành "I\'d like to be a doctor.")',
+      huong:'Với "would like", dùng "would" hoặc viết tắt "\'d". Sau "like" dùng động từ thêm -ing khi nói về sở thích. Không dùng "a" trước nguyên âm: an actor.',
+      items:[ T('What was you like to be in the future?', ['What would you like to be in the future?']),
+              T('I like to be a doctor.', ['I\'d like to be a doctor.','I would like to be a doctor.']),
+              T('I like read stories.', ['I like reading stories.']),
+              T('He\'d like to be a actor.', ['He\'d like to be an actor.']),
+              T('What his job?', ['What is his job?']) ] },
+    { id:'g5h1-u5-a3', title:'Exercise 6. Write questions for the underlined parts.', type:'type', star:3,
+      instr:'Viết câu hỏi cho phần gạch chân. (Ví dụ: I would like to be an engineer. - What would you like to be in the future?)',
+      huong:'Phần gạch chân là câu trả lời. Chọn từ để hỏi đúng: nghề nghiệp dùng "What ... like to be", và đổi chủ ngữ cho đúng.',
+      items:[ T('I would like to be an engineer.', ['What would you like to be in the future?']),
+              T('My brother would like to be a firefighter.', ['What would your brother like to be in the future?']),
+              T('My son would like to be a doctor.', ['What would your son like to be in the future?']),
+              T('He would like to be a writer.', ['What would he like to be in the future?']),
+              T('No, I don\'t want to be a singer.', ['Would you like to be a singer?']) ] },
+    { id:'g5h1-u5-a4', title:'Exercise 7. Give the correct form of the verbs.', type:'type', star:3,
+      instr:'Chia động từ trong ngoặc ở dạng đúng. (Ví dụ: Linda would like (be) a nurse. = be)',
+      huong:'Sau "would like" dùng động từ nguyên mẫu. Sau "like" để nói sở thích dùng -ing. Hiện tại thường với "usually" dùng dạng thêm s/es.',
+      items:[ T('Linda would like ___ (be) a nurse.', ['be']),
+              T('They like ___ (work) on a farm.', ['working','working on a farm']),
+                            T('She usually ___ (read) comic books.', ['reads']),
+              T('What would your sister like ___ (do) in her free time?', ['to do','doing']),
+              T('Do they ___ (want) to become teachers?', ['want']),
+              T('You should ___ (study) hard.', ['study']) ] },
+    { id:'g5h1-u5-a5', passage:"Hi, my name is James. Today, my class has a presentation about dream jobs. Mark would like to be a writer because he wants to write stories. Jack would like to be a firefighter because he wants to help people. Lucy would like to be a teacher because she wants to teach children. Kate would like to be a reporter because she wants to talk to people. Tony would like to be a gardener because he wants to grow flowers. I would like to be an architect because I want to design buildings.", title:'Exercise 7. Read and answer the questions.', type:'type', star:2,
+      instr:'Đọc đoạn văn về James và các bạn rồi trả lời câu hỏi. (Ví dụ: What would Mark like to be in the future? - He would like to be a writer.)',
+      huong:'Tìm trong đoạn văn tên bạn và nghề họ muốn làm; câu "Why" trả lời bằng "Because ... wants to ...".',
+      items:[ T('What would Mark like to be in the future?', ['He would like to be a writer.','He\'d like to be a writer.','A writer.']),
+              T('Why would Jack like to be a firefighter?', ['Because he wants to help people.','He wants to help people.']),
+              T('What would James like to be in the future?', ['He would like to be an architect.','He\'d like to be an architect.','An architect.']),
+              T('Why would Kate like to be a reporter in the future?', ['Because she wants to talk to people.','She wants to talk to people.']),
+              T('Why would Lucy like to be a teacher?', ['Because she wants to teach children.','She wants to teach children.']),
+              T('What would Tony like to be in the future?', ['He would like to be a gardener.','He\'d like to be a gardener.','A gardener.']) ] },
+    { id:'g5h1-u5-a6', passage:"Dear Grandpa, How are you? Last week, Dad took me to Kid city. There were a lot of people and interesting things to see there. I was very excited to be on a plane, and watched some video clips about pilots. It was great to see them fly lots of planes. I'd like to be a pilot in the future like you. I want to fly to many countries around the world. Now I prepare for my dream job by running two kilometres in the morning. A good pilot must be strong, right? Love you, Jim", title:'Exercise 6. Read and tick True or False.', type:'choice', star:2,
+      instr:'Đọc thư của Jim rồi chọn True hoặc False. (Ví dụ: Jim writes to his grandmother. - True)',
+      huong:'Đọc thư, tìm thông tin đúng về việc đi Kid city, số lượng phi công, nghề của bố và việc Jim chạy bộ buổi sáng.',
+      items:[ C('Jim writes to his grandmother. (Ví dụ)',['True','False'],0),
+              C('Jim\'s father took him to Kid city.',['True','False'],0),
+              C('He saw a lot of pilots there.',['True','False'],1),
+              C('His father is a pilot.',['True','False'],1),
+              C('He does morning exercise by running two kilometres to be strong.',['True','False'],0),
+              C('He wants to be a pilot in the future.',['True','False'],0) ] },
+    { id:'g5h1-u5-a7', title:'Exercise 8. Read and complete with the question words.', type:'gap', star:2,
+      instr:'Điền từ để hỏi vào chỗ trống: What, Where, Why, How, When, Who. (Ví dụ: ___ would you like to be in the future? - What)',
+      huong:'Đọc câu trả lời để đoán câu hỏi: nghề nghiệp (What), nơi chốn (Where), lý do (Why - Because...), người đi cùng (Who), phương tiện (How - By bus), thời gian (When - Tomorrow morning).',
+      items:[ G('1. ___ would you like to be in the future? - I\'d like to be a doctor.',['What']),
+              G('2. ___ would you like to go tomorrow? - I\'d like to go to the beach.',['Where']),
+              G('3. ___ would you like to go there? - Because it\'s beautiful.',['Why']),
+              G('4. ___ would you like to go with? - My family.',['Who']),
+              G('5. ___ would you like to get there? - By bus because it\'s cheap.',['How']),
+              G('6. ___ would you like to come back? - Tomorrow morning.',['When']) ] },
+    { id:'g5h1-u5-a8', title:'Exercise 3. Complete the sentences with the suitable word.', type:'gap', star:2,
+      instr:'Điền từ thích hợp vào chỗ trống. (Ví dụ: A gardener works on a ___. = farm)',
+      huong:'Đọc cả câu để hiểu nghĩa: nơi làm việc, thời gian (in the future), nghề, động từ "want", từ để hỏi (What, When), liên từ (because).',
+      items:[ G('1. A gardener works on a ___.',['farm']),
+              G('2. Will you be a writer in the ___?',['future']),
+              G('3. Tom likes working in the garden, so he would like to be a ___ in the future.',['gardener']),
+              G('4. My sister likes singing. She ___ to become a singer.',['wants']),
+              G('5. ___ would your brother like to be when he grows up?',['What']),
+              G('6. ___ I was small, I wanted to become an artist.',['When']),
+              G('7. Would you like to be an artist when you ___ up?',['grow']),
+              G('8. I would like to be an architect ___ I would like to design buildings.',['because']) ] },
+    { id:'g5h1-u5-a9', title:'Exercise 4. Choose the correct answer.', type:'choice', star:2,
+      instr:'Khoanh vào đáp án đúng. (Ví dụ: "Would you like to be a teacher?" là câu đúng.)',
+      huong:'Với "would like to be", câu hỏi bắt đầu bằng "Would you like to be...?"; trả lời "Because I\'d like to..." khi hỏi lý do.',
+      items:[ C('Choose the correct sentence. (1)',['Would you like to be a teacher?','Do you like to be teacher?','Do you like be a teacher?'],0),
+              C('Why would you like to be a writer? (2)',['Because I\'d like to design buildings.','Because I\'d like to look after patients.','Because I\'d like to write stories.'],2),
+              C('I\'d like to be ___. (4)',['engineer','an engineer','a engineer'],1),
+              C('Why would you like to be a teacher? (5)',['Because I\'d like to teach children.','Because I\'d like to look at planes.','Because I\'d like to draw a plane.'],0),
+              C('Where would you like to go tonight? (6)',['I\'d like to be a nurse.','I\'d like to do my homework.','I\'d like to go to the restaurant.'],2) ] },
+    { id:'g5h1-u5-a10', title:'Exercise 5. Correct the sentences.', type:'type', star:3,
+      instr:'Sửa lỗi sai trong mỗi câu. (Ví dụ: "What you would like to be in the future?" sửa thành "What would you like to be in the future?")',
+      huong:'Trợ động từ "would" đứng trước chủ ngữ trong câu hỏi. Sau "to be" dùng a/an đúng. Chủ ngữ số ít (he) dùng "wants" khi nói về hiện tại.',
+      items:[ T('What you would like to be in the future?', ['What would you like to be in the future?']),
+              T('I would like be an reporter.', ['I would like to be a reporter.']),
+              T('Why would your like to be a firefighter?', ['Why would you like to be a firefighter?']),
+              T('He\'d like to be a gardener because he want to plant trees and flowers.', ['He\'d like to be a gardener because he wants to plant trees and flowers.']) ] },
+    { id:'g5h1-u5-a11', title:'Exercise 6. Read and complete.', type:'gap', star:2,
+      instr:'Đọc đoạn văn của Kate rồi điền từ trong khung: future, writer, teacher, would, talk. (Ví dụ: "about our (1) ___" = future)',
+      huong:'Đọc từng chỗ trống theo nghĩa của đoạn văn: nghề nghiệp (teacher, writer), "would" đi với "like", "talk to people" nói chuyện với mọi người.',
+      items:[ { s:'Hi, I am Kate. I have some close friends. We have different dreams about our (1) ___. Bill would like to be an English (2) ___. He (3) ___ like to teach English for children. Jane and Sam would like to be reporters because they want to (4) ___ to people. I would like to be a (5) ___ because I would like to write stories for children. We want our dreams to be true one day.', a:[['future'],['teacher'],['would'],['talk'],['writer']], multi:true, ph:['(1)','(2)','(3)','(4)','(5)'] } ] },
+    { id:'g5h1-u5-a12', title:'Exercise 7. Read and write.', type:'gap', star:2,
+      instr:'Đọc câu rồi viết nghề nghiệp thích hợp vào chỗ trống. (Ví dụ: She\'d like to be an ___ because she\'d like to draw pictures. = artist)',
+      huong:'Đọc lý do sau "because" để biết nghề: vẽ tranh (artist), viết truyện (writer), thiết kế tòa nhà (architect), chăm sóc hoa (gardener), chăm sóc răng (dentist), lái máy bay (pilot).',
+      items:[ G('1. She\'d like to be an ___ because she\'d like to draw pictures.',['artist']),
+              G('2. He\'d like to be a ___ because he\'d like to write stories.',['writer']),
+              G('3. She\'d like to be an ___ because she\'d like to design buildings.',['architect']),
+              G('4. He\'d like to be a ___ because he\'d like to look after flowers.',['gardener']),
+              G('5. She\'d like to be a ___ because she\'d like to look after people\'s teeth.',['dentist']),
+              G('6. He\'d like to be a ___ because he\'d like to fly a plane.',['pilot']) ] },
+    { id:'g5h1-u5-a13', title:'Exercise 8. Reorder the words to make the correct sentences.', type:'type', star:2,
+      instr:'Sắp xếp các từ thành câu đúng. (Ví dụ: "I would like to be an artist." là câu đúng.)',
+      huong:'Bắt đầu bằng chủ ngữ hoặc từ để hỏi. "would like to be" đi liền nhau; "wouldn\'t" là dạng phủ định của "would".',
+      items:[ T('be / artist. / to / an/ would /I / like', ['I would like to be an artist.']),
+              T('to / Would/ he/ be/ a/ firefighter?/ like', ['Would he like to be a firefighter?']),
+              T('be / She / writer./ like / to / a / wouldn\'t.', ['She wouldn\'t like to be a writer.']),
+              T('He\'d / children./ teach/ to/ like', ['He\'d like to teach children.']),
+              T('to /a/ Why/ you/ would/ doctor?/ like/be', ['Why would you like to be a doctor?']) ] },
+    { id:'g5h1-u5-a14', title:'Exercise 9. Translate into English.', type:'type', star:3,
+      instr:'Dịch các câu tiếng Việt sang tiếng Anh. (Ví dụ: Bạn muốn trở thành gì trong tương lai? = What would you like to be in the future?)',
+      huong:'Dịch theo mẫu đã học: "What would you like to be in the future?", "I\'d like to be a ...", "Why would you like to be a ...?", "Because I\'d like to ...".',
+      items:[ T('Bạn muốn trở thành gì trong tương lai?', ['What would you like to be in the future?']),
+              T('Tôi muốn trở thành một người lính cứu hỏa.', ['I\'d like to be a firefighter.','I want to be a firefighter.','I would like to be a firefighter.']),
+              T('Cô ấy muốn trở thành một người phóng viên.', ['She\'d like to be a reporter.','She would like to be a reporter.']),
+              T('Tại sao bạn muốn trở thành một nhà văn?', ['Why would you like to be a writer?']),
+              T('Bởi vì tôi muốn trồng hoa.', ['Because I\'d like to grow flowers.','Because I would like to grow flowers.']) ] }
+  ]
+};
+})();
+
+(function(){
+window.GROUPS = window.GROUPS || {};
+window.GROUPS['gs5-hk1'] = window.GROUPS['gs5-hk1'] || {
+  title: 'Bài tập bổ trợ Global Success lớp 5 - Học kỳ 1',
+  sub: 'Theo từng Unit trong sách Extra Workbook 5, học lần lượt từ Unit 1. Mỗi Unit có khung ngữ pháp và bài luyện tập.'
+};
+window.UNITS = window.UNITS || {};
+var C = function(s,o,a){ return {s:s, o:o, a:a}; };
+var T = function(s,a){ return {s:s, a:a}; };
+var G = function(s,a){ return {s:s, a:a}; };
+window.UNITS['g5h1-r1'] = {
+  id:'g5h1-r1', book:'Extra Workbook 5 (Global Success) - Học kỳ 1', bookShort:'Extra Workbook 5', lesson:6, unitLabel:'Review 1',
+  group:'gs5-hk1', groupOrder:6,
+  title:'Ôn tập Unit 1 - 5', topicKey:'review 1 on tap unit 1 5 hoc ky 1 lop 5',
+  can:'Em ôn lại được giới thiệu bản thân, nơi sống, quốc tịch, sở thích và nghề nghiệp mong muốn.',
+  grammar:[
+    { h:'Tổng hợp các mẫu câu đã học', icon:'trophy',
+      body:[
+        'F::Can you tell me about yourself? / What\'s your address?<span class="ex">Giới thiệu bản thân / Địa chỉ của bạn là gì?</span>',
+        'F::What nationality is he/she? / What\'s he/she like?<span class="ex">Quốc tịch / Tính cách của anh ấy/cô ấy</span>',
+        'F::What do you like doing in your free time?<span class="ex">Bạn thích làm gì vào thời gian rảnh?</span>',
+        'F::What would you like to be in the future? / Why would you like to be a ...?<span class="ex">Bạn muốn trở thành gì? / Tại sao?</span>'
+      ],
+      tip:'Mẫu trả lời: I live in..., I\'m from..., I like + V-ing, I\'d like to be a ..., Because I\'d like to ...' }
+  ],
+  acts:[
+    { id:'g5h1-r1-a1', title:'Exercise 3. Circle the odd one out.', type:'choice', star:1,
+      instr:'Khoanh vào từ khác loại với ba từ còn lại. (Ví dụ: Chinese, Indian, Australian là quốc tịch; Vietnam là tên nước, nên khoanh C.)',
+      huong:'Xác định nhóm chung của ba từ, chọn từ không cùng nhóm: quốc tịch, nơi chốn, động từ, trạng từ, nghề nghiệp.',
+      items:[ C('Chinese / Indian / Vietnam / Australian',['Chinese','Indian','Vietnam','Australian'],2),
+              C('countryside / pink / city / mountains',['countryside','pink','city','mountains'],1),
+              C('violin / guitar / play / piano',['violin','guitar','play','piano'],2),
+              C('often / first / sometimes / rarely',['often','first','sometimes','rarely'],1),
+              C('flat / firefighter / doctor / writer',['flat','firefighter','doctor','writer'],0) ] },
+    { id:'g5h1-r1-a2', title:'Exercise 4. Read and match.', type:'match', star:2,
+      instr:'Nối câu hỏi ở cột trái với câu trả lời ở cột phải. Bấm một câu hỏi rồi bấm câu trả lời tương ứng. (Ví dụ: Can you tell me about yourself? nối với I\'m in grade 5C.)',
+      huong:'Đọc câu hỏi, tìm câu trả lời đúng nghĩa: giới thiệu, có/không (Yes, I do), quốc tịch (He\'s American), sở thích, nghề muốn làm.',
+      items:[ {s:'Can you tell me about yourself?', a:4}, {s:'Do you live in that building?', a:2}, {s:'What nationality is he?', a:3}, {s:'What do you like doing in your free time?', a:0}, {s:'What would you like to be in the future?', a:1} ],
+      right:['I like going for a walk.', 'I\'d like to be a gardener.', 'Yes, I do.', 'He\'s American.', 'I\'m in grade 5C.'] },
+    { id:'g5h1-r1-a3', title:'Exercise 7. Read and circle.', type:'choice', star:2,
+      instr:'Đọc mỗi đoạn mô tả nghề nghiệp rồi khoanh vào đáp án đúng. (Ví dụ: "I teach Maths." thì khoanh teacher.)',
+      huong:'Tìm động từ hoặc nơi làm việc trong câu mô tả: teach (giáo viên), help sick people (hospital), act/tell stories (theatre), report the news (reporter), put out fire (firefighter), plant flowers (garden).',
+      items:[ C('1. I teach Maths. I have a lot of pupils. I am a ___.',['teacher','nurse'],0),
+              C('2. I help sick people. I work in a ___.',['school','hospital'],1),
+              C('3. I act and tell stories to lots of people. I work at a ___.',['theatre','nursing home'],0),
+              C('4. I report the news. I work in an office. I am a ___.',['actor','reporter'],1),
+              C('5. I put out fire. I work in a fire station. I am a ___.',['firefighter','doctor'],0),
+              C('6. I plant beautiful flowers and trees. I work in the ___.',['garden','factory'],0) ] },
+    { id:'g5h1-r1-a4', title:'Exercise 9. Reorder the words to make the correct sentences.', type:'type', star:2,
+      instr:'Sắp xếp các từ thành câu đúng. (Ví dụ: "What is your address?" là câu hỏi đúng.)',
+      huong:'Câu hỏi bắt đầu bằng từ để hỏi (What, Where, Why). Chú ý từ "because" đứng đầu phần trả lời và dùng "I\'d like to" trước động từ.',
+      items:[ T('What / address ? / is / your', ['What is your address?']),
+              T('I / countryside. / live / in / the', ['I live in the countryside.']),
+              T('What / like? / is / he', ['What is he like?']),
+              T('I / ride / bike /my / always / in / park. / the', ['I always ride my bike in the park.']),
+              T('Because / like / I\'d / to / talk / people. / to', ['Because I\'d like to talk to people.']) ] },
+    { id:'g5h1-r1-a5', passage:"My name is Nam. I am Vietnamese. I live in a small village in Da Nang. My address is 105 Tran Hung Dao street. I think my village is peaceful. It's always quiet and beautiful. The people are friendly and helpful. I am a pupil in Grade 5 at Ngo Quyen Primary school. My favourite subject at school is maths. I like solving maths problems. My favourite colour is blue. In my free time, I like playing football. I also enjoy going for a walk with my brother. My dream is to become a teacher in the future because I want to teach children.", title:'Exercise 10. Read and complete the form.', type:'type', star:3,
+      instr:'Đọc đoạn văn về Nam rồi điền thông tin vào phiếu. (Ví dụ: Name: Nam)',
+      huong:'Đọc đoạn văn một lần, tìm từng mục: tên, lớp, quốc tịch, địa chỉ, môn học yêu thích, màu yêu thích, hoạt động rảnh, nghề tương lai.',
+      items:[ T('Name', ['Nam']),
+              T('Grade', ['5','Grade 5']),
+              T('Nationality', ['Vietnamese']),
+              T('Address', ['105 Tran Hung Dao street','105 Tran Hung Dao Street']),
+              T('Favourite subjects', ['maths','Maths']),
+              T('Favourite colour', ['blue']),
+              T('Free time activities', ['playing football, going for a walk with his brother','playing football','going for a walk with his brother']),
+              T('Future job', ['teacher','a teacher']) ] }
+  ]
+};
+})();
+
+</script><script>
 window.ORDER = Object.keys(window.UNITS);
 window.WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxwSFF0vlJ3uErUq3STZU805g84XC6KDKqoUrlbNvsLN6CmWkNxw-39DRdZ5d3raPT79Q/exec";
 </script>
@@ -17012,7 +17768,7 @@ function renderLogin(app, msg){
   h += '<button class="loginbtn" id="btnLogin">Vào học</button>';
   h += '<div class="login-msg" id="loginMsg">'+esc(msg||'')+'</div>';
   h += '</div><div class="login-gv"><a href="quan-ly.html">Khu vực giáo viên</a></div></div>';
-  h += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng</footer>';
+  h += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 31/10/2026 · Global 5</span></footer>';
   app.innerHTML = h;
 
   var doLogin = function(){
@@ -17059,7 +17815,7 @@ function renderBlocked(app, unitId){
   }
   h += '<button class="loginbtn" id="btnBack">Về trang chủ</button>';
   h += '</div></div>';
-  h += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng</footer>';
+  h += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 31/10/2026 · Global 5</span></footer>';
   app.innerHTML = h;
   on(qs('#btnBack'), 'click', function(){ go(''); });
 }
@@ -17153,7 +17909,7 @@ function renderHome(app){
     }
   }
   html += '</div>';
-  html += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng</footer>';
+  html += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 31/10/2026 · Global 5</span></footer>';
   app.innerHTML = html;
 
   on(qs('#searchInput'), 'input', function(e){ homeState.query = e.target.value; renderHome(app);
@@ -17268,6 +18024,7 @@ function renderAct(app, r){
     html += '<div class="backbar"><button class="backbtn" id="backUnit">'+icon('back')+esc(u.title)+'</button></div>';
     html += '<h1 style="font-size:17px;margin:4px 0 10px;">'+esc(act.title)+'</h1>';
     html += '<div class="actinstr"><b>Đề bài:</b> '+esc(act.instr)+'</div>';
+    if(act.passage) html += '<div class="actpassage"><b>Đoạn văn:</b><br>'+esc(act.passage)+'</div>';
     if(act.img && window.IMGS && window.IMGS[act.img]) html += '<img class="actimg" alt="" src="'+window.IMGS[act.img]+'">';
     html += '<div class="actrun" id="qlist">';
 
