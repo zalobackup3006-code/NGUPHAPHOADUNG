@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- PHIEN BAN 31/10/2026 - CO BAI GLOBAL 5 HK1 (g5h1) -->
+<!-- PHIEN BAN 23/11/2026 - KHOA TUNG BAI VA THEO NGAY GIAO, CO LICH SU (g5h1) -->
 <html lang="vi">
 <head>
 <meta charset="utf-8">
@@ -92,6 +92,7 @@ header.top .sub{font-size:13px;opacity:.85;margin-top:2px;}
 .unitcard .uc-tag.lock{background:#fee2e2;color:#991b1b;}
 .unitcard .uc-tag.new{background:#dbeafe;color:#1e40af;}
 .unitcard .uc-date{font-size:12px;color:var(--sub,#555);}
+.unitcard .uc-hist{width:100%;font-size:12px;color:var(--sub,#555);margin-top:2px;}
 .unitcard.locked{opacity:.75;}
 .unitcard .uc-meta{font-size:12.5px;color:var(--sub);margin-top:3px;}
 .grouphead{margin:20px 2px 0;}
@@ -17496,7 +17497,7 @@ window.UNITS['g5h1-r1'] = {
 
 </script><script>
 window.ORDER = Object.keys(window.UNITS);
-window.WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxwSFF0vlJ3uErUq3STZU805g84XC6KDKqoUrlbNvsLN6CmWkNxw-39DRdZ5d3raPT79Q/exec";
+window.WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyEYdm__oZS1xDUuSwync27MTOPgPoGN0nIgVALD_xhbxidgzLr4wGVa6A4AlhHQCQj/exec";
 </script>
 <script>(function(){
 "use strict";
@@ -17768,7 +17769,7 @@ function renderLogin(app, msg){
   h += '<button class="loginbtn" id="btnLogin">Vào học</button>';
   h += '<div class="login-msg" id="loginMsg">'+esc(msg||'')+'</div>';
   h += '</div><div class="login-gv"><a href="quan-ly.html">Khu vực giáo viên</a></div></div>';
-  h += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 31/10/2026 · Global 5</span></footer>';
+  h += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 23/11/2026 · Khoá theo bài và ngày giao</span></footer>';
   app.innerHTML = h;
 
   var doLogin = function(){
@@ -17815,7 +17816,7 @@ function renderBlocked(app, unitId){
   }
   h += '<button class="loginbtn" id="btnBack">Về trang chủ</button>';
   h += '</div></div>';
-  h += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 31/10/2026 · Global 5</span></footer>';
+  h += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 23/11/2026 · Khoá theo bài và ngày giao</span></footer>';
   app.innerHTML = h;
   on(qs('#btnBack'), 'click', function(){ go(''); });
 }
@@ -17883,6 +17884,7 @@ function renderHome(app){
           + (gi.moi ? '<span class="uc-tag new">Mới</span>' : '<span class="uc-tag">Cũ</span>')
           + (gi.ngay ? '<span class="uc-date">Giao ngày '+esc(gi.ngay)+'</span>' : '')
           + '</div>';
+        if(gi.ls && gi.ls.length) h += '<div class="uc-hist">Lịch sử: '+esc(gi.ls.join(' · '))+'</div>';
       }
       h += '</div>';
       h += '<button class="starbtn'+(inCart?' on':'')+'" data-star="'+u.id+'" title="Thêm vào giỏ">'+icon('star')+'</button>';
@@ -17909,7 +17911,7 @@ function renderHome(app){
     }
   }
   html += '</div>';
-  html += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 31/10/2026 · Global 5</span></footer>';
+  html += '<footer class="foot">Dịch vụ gia sư và dạy kèm Hoa Dũng<br><span style="font-size:11px;opacity:.7">Phiên bản 23/11/2026 · Khoá theo bài và ngày giao</span></footer>';
   app.innerHTML = html;
 
   on(qs('#searchInput'), 'input', function(e){ homeState.query = e.target.value; renderHome(app);
